@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="./assets/frame.png" width="580px" class="changeImage">   
+        <div class="result-overlay">
+            <div>
+                <h1 id="cronometro"><span>00:00:00</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="start()" >Start</button>
+    <br>
+    <br>
+    <button onclick="stop()" id="stopButton">Stop</button>
+    
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
