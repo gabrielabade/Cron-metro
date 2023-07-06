@@ -13,20 +13,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 5px;
     min-height: 100vh;
-    margin-top: 20px;
+    margin: 0px;
   }
 
   .image-container {
     position: relative;
     display: flex;
     justify-content: center;
+    margin-top: -40px;
+    margin-bottom: -50px; 
   }
   
   .changeImage {
     width: 100%;
-    max-width: 580px; /* Defina um valor máximo para evitar que a imagem fique muito grande */
+    max-width: 500px; /* Defina um valor máximo para evitar que a imagem fique muito grande */
     height: auto;
   }
 
@@ -48,7 +49,6 @@
     line-height: 38px;
     color:#F09380;
     text-align: center;
-    margin-top: 20px;
   }
 
   button {
