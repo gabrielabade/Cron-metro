@@ -5,9 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Black Ops One', cursive;
-  }
-  
-  body {
+}
+
+body {
     background: #f9e2f3;
     display: flex;
     align-items: center;
@@ -15,23 +15,27 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0px;
-  }
+}
 
-  .image-container {
+.container {
+    position: relative;
+}
+
+.image-container {
     position: relative;
     display: flex;
     justify-content: center;
     margin-top: -40px;
     margin-bottom: -50px; 
-  }
-  
-  .changeImage {
-    width: 100%;
-    max-width: 500px; /* Defina um valor máximo para evitar que a imagem fique muito grande */
-    height: auto;
-  }
+}
 
-  .result-overlay {
+.changeImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.result-overlay {
     color: #FFB7AB;
     position: absolute;
     top: 50%;
@@ -41,17 +45,17 @@
     font-size: 90px;
     margin-top: 80px;
     align-items: center;
-  }
+}
 
-  h1 {
+h1 {
     font-style: normal;
     font-size: 70px;
     line-height: 38px;
     color:#F09380;
     text-align: center;
-  }
+}
 
-  button {
+button {
     background-color: #F09380;
     box-shadow: 0px 18px 40px rgb(211, 159, 183);
     border-radius: 10px;
@@ -61,25 +65,32 @@
     font-size: 36px;
     border: none;
     cursor: pointer;
-  }
+}
 
-  button:hover {
+button:hover {
     opacity: 0.9;
-  }
-  
-  button:active {
-    opacity: 0.8;
-  }
+}
 
-  @media screen and (max-width: 600px) {
+button:active {
+    opacity: 0.8;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
     .result-overlay {
-      font-size: 60px;
-      margin-top: 50px;
-      margin-bottom: 20px;
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
-  
+
     h1 {
-      font-size: 48px;
-      line-height: 28px;
+        font-size: 48px;
+        line-height: 28px;
     }
-  }
+}
